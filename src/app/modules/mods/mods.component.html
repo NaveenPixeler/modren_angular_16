@@ -1,0 +1,9 @@
+<app-divider>Modal Componenet</app-divider>
+<button (click)="onClick()">Show modal</button>
+<app-modal (close)="onClick()" *ngIf="openModal">
+  <div modalTitle>MODAL!</div>
+  <p modalContent>Some text goes here!</p>
+</app-modal>
+
+<app-divider>Accordion Componenet</app-divider>
+<app-accordion [items]="items"></app-accordion>
